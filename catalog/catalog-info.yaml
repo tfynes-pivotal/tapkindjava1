@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tapkindjava1
+  description: Java function powered by Function Buildpacks for Knative
+  tags:
+    - app-accelerator
+    - beta
+    - function
+    - buildpacks
+    - knative
+    - tanzu
+    - java
+    - spring
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tapkindjava1'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
